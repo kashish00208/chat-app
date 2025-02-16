@@ -15,7 +15,7 @@ export default function(req,res){
         from:"Chat app",
         to : req.body.email,
         text : req.body.message,
-    };
+    }; 
     transportar.sendMail(mailData, function(err,info){
         if(err){
             return res.status(500).json({message:`An error occured ${err}`})
