@@ -1,5 +1,5 @@
-import react from "react";
 import { useState } from "react"
+import jwt from 'jsonwebtoken'
 
 export default function Home() {
   const [email,setEmail] = useState("");
